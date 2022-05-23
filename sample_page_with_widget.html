@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Sample page with widget</title>
+	</head>
+
+	<body>
+
+		<div><a href="#" class="omni-email-widget">Link for widget activation</a> while display_button: false</div>
+
+		<!-- Start of widget's main script (sample, use your code) -->
+		<script>
+	    !function(e,o){!window.omni?window.omni=[]:'';window.omni.push(o);o.g_config={widget_id:"[your_widget_id]"}; o.email_widget=o.email_widget||{};var w=o.email_widget;w.readyQueue=[];o.config=function(e){ this.g_config.user=e};w.ready=function(e){this.readyQueue.push(e)};var r=e.getElementsByTagName("script")[0];c=e.createElement("script");c.type="text/javascript",c.async=!0;c.src="https://deskie.io/bundles/acmesite/js/cwidget0.2.js";r.parentNode.insertBefore(c,r)}(document,[]);
+		</script>
+		<!-- End of widget's main script -->
+
+		<!-- Start of additional script for advanced features -->
+		<script>
+			omni[0].config({
+				diplay_button: true, // name of the class while value is "false" - omni-email-widget
+				user_info: false, // if value is "true" basic user info is added as a note
+ 	 		});
+			omni[0].widget={ready: function() {
+				omni[0].widget.identify={
+					user_full_name: 'John Galt', //standard field
+					user_email: 'john.g@gmail.com', //standard field
+					user_phone: '+12025550166', //standard field
+					company_name: 'John Galt Solutions, Inc', //standard field
+					company_position: 'CEO', //standard field
+					user_note: 'Thinking about paying for the PRO package', //standard field
+					subject: 'Personal demo via Whereby', //standard field
+					priority: 2, //standard field (1 - low, 2 - normal, 3 - high, 4 - critical)
+					cf_39: 'web', //custom field (id можно получить через API)
+					cf_34: true,  //custom field (id можно получить через API)
+					purchases: 12, //additional info which is added as a note
+					'Partner URL': 'http://robotsrule.com/info.html' //additional info which is added as a note
+				};
+
+				omni[0].widget.case_subject=[
+					'Question about product features',
+          'Initial setup',
+          'Personal demo via Zoom'
+					'Payment method'
+				];
+
+				omni[0].widget.search = 'payment'
+			}};
+		</script>
+		<!-- End of additional script for advanced feature -->
+
+	</body>
+</html>
