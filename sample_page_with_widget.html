@@ -9,22 +9,22 @@
 
 	<body>
 
-		<div><a href="#" class="omni-email-widget">Link for widget activation</a> while display_button: false</div>
+		<div><a href="#" class="deskie-email-widget">Link for widget activation</a> while display_button: false</div>
 
 		<!-- Start of widget's main script (sample, use your code) -->
 		<script>
-	    !function(e,o){!window.omni?window.omni=[]:'';window.omni.push(o);o.g_config={widget_id:"[your_widget_id]"}; o.email_widget=o.email_widget||{};var w=o.email_widget;w.readyQueue=[];o.config=function(e){ this.g_config.user=e};w.ready=function(e){this.readyQueue.push(e)};var r=e.getElementsByTagName("script")[0];c=e.createElement("script");c.type="text/javascript",c.async=!0;c.src="https://deskie.io/bundles/acmesite/js/cwidget0.2.js";r.parentNode.insertBefore(c,r)}(document,[]);
+	    !function(e,o){!window.deskie?window.deskie=[]:'';window.deskie.push(o);o.g_config={widget_id:"[your_widget_id]"}; o.email_widget=o.email_widget||{};var w=o.email_widget;w.readyQueue=[];o.config=function(e){ this.g_config.user=e};w.ready=function(e){this.readyQueue.push(e)};var r=e.getElementsByTagName("script")[0];c=e.createElement("script");c.type="text/javascript",c.async=!0;c.src="https://deskie.io/bundles/acmesite/js/cwidget0.2.js";r.parentNode.insertBefore(c,r)}(document,[]);
 		</script>
 		<!-- End of widget's main script -->
 
 		<!-- Start of additional script for advanced features -->
 		<script>
-			omni[0].config({
-				display_button: true, // name of the class while value is "false" - omni-email-widget
+			deskie[0].config({
+				display_button: true, // name of the class while value is "false" - deskie-email-widget
 				user_info: false, // if value is "true" basic user info is added as a note
  	 		});
-			omni[0].widget={ready: function() {
-				omni[0].widget.identify={
+			deskie[0].widget={ready: function() {
+				deskie[0].widget.identify={
 					user_full_name: 'John Galt', //system field
 					user_email: 'john.g@gmail.com', //system field
 					user_phone: '+12025550166', //system field
@@ -39,14 +39,14 @@
 					'Partner URL': 'http://robotsrule.com/info.html' //additional info which is added as a note
 				};
 
-				omni[0].widget.case_subject=[
+				deskie[0].widget.case_subject=[
 					'Question about product features',
 					'Initial setup',
 					'Personal demo via Zoom',
 					'Payment method'
 				];
 
-				omni[0].widget.search = 'payment'
+				deskie[0].widget.search = 'payment'
 			}};
 		</script>
 		<!-- End of additional script for advanced feature -->
